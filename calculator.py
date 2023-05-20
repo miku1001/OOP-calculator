@@ -6,24 +6,28 @@ ui = UserInterface()
 class LogicalOperator:
     # Method for addition
     def add(self, num1, num2):
+        print("\nYou choose, \033[31mADDITION\033[0m!".center(45))
         # add num1, num2
         sum = num1 + num2
         return sum
     
     # Method for subtraction
     def minus(self, num1, num2):
+        print("\nYou choose, \033[32mSUBTRACTION\033[0m!".center(45))
         # subtract num1, num2
         diff = num1 - num2
         return diff
     
     # Method for multiplication
     def multiply(self, num1, num2):
+        print("You choose, \033[33mMULTIPLICATION\033[0m!".center(45))
         # multiply num1, num2
         product = num1 * num2
         return product
     
     # Method for division
     def divide(self, num1, num2):
+        print("You choose, \033[34mDIVISION\033[0m!".center(45))
         while True:
             try:
                 # divide num1, num2

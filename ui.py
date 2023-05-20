@@ -23,6 +23,7 @@ class UserInterface:
     
     # Create method to print number
     def print_ans(self, answer):
+        print()
         print("The answer is \033[42m" + str(answer) + "\033[0m")
         print()
 
@@ -35,7 +36,8 @@ class UserInterface:
     def again(self):
         while True:
             retry = input("Do you want to continue? \n"
-                          "Type \033[32mY\033[0m if yes or \033[31mN\033[0m if no: \n")
+                          "Type \033[32mY\033[0m if yes or \033[31mN\033[0m if no: ")
+            print()
             if retry.lower() == 'n':
                 # Stop the program
                 print("Closing Program... Thank you! \U0001F64B")
@@ -48,5 +50,6 @@ class UserInterface:
             # If invalid character
             else:
                 print()
-                print("\033[31mInvalid character!\033[0m \n")
+                print("\033[31mInvalid character!\033[0m")
+                print()
                 continue

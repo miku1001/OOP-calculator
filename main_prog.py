@@ -20,22 +20,17 @@ while True:
     mode = ui.mode()
     if mode == "1":
         sum = calc.add(num1, num2)
-        print()
         ui.print_ans(sum)
     elif mode == "2":
         diff = calc.minus(num1, num2)
-        print()
         ui.print_ans(diff)        
     elif mode == "3":
         product = calc.multiply(num1, num2)
-        print()
         ui.print_ans(product)
     elif mode == "4":
         quotient = calc.divide(num1, num2)
-        print()
         ui.print_ans(quotient)
     else:
-        print()
         print("\033[31mInvalid choice!\033[0m \n")
         continue
     
