@@ -27,12 +27,18 @@ while True:
     if mode == 1:
         sum = calc.add(num1, num2)
         ui.print_ans(sum)
-    if mode == 2:
+    elif mode == 2:
         diff = calc.minus(num1, num2)
         ui.print_ans(diff)        
-    if mode == 3:
+    elif mode == 3:
         product = calc.multiply(num1, num2)
         ui.print_ans(product)
-    if mode == 4:
+    elif mode == 4:
         quotient = calc.divide(num1, num2)
         ui.print_ans(quotient)
+    else:
+        print("Invalid choice!")
+        continue
+    
+    if not ui.again():
+        break
