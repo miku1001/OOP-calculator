@@ -43,6 +43,6 @@ class LogicalOperator:
                 return quotient
             except ZeroDivisionError:
                 print()
-                print("\033[31mERROR! Divided by zero\033[0m \n")
+                print("\033[31mERROR! Divided by zero.\033[0m \n")
                 num1 = ui.input_number("first")
                 num2 = ui.input_number("second")
