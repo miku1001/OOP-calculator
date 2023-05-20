@@ -2,8 +2,14 @@
 class UserInteract:
     # Create method to input number
     def input_number(self):
-        num = float(input("Input a number: "))
-        return num
+        while True:
+            try:
+                num = float(input("Input a number: "))
+                return num
+            except ValueError:
+                print()
+                print("\033[31mERROR!, you entered invalid character!\033[0m \n")
+                continue
     
     # Create method to print number
     def print_ans(self, answer):
