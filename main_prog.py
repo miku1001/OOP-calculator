@@ -2,6 +2,8 @@
 import pyfiglet
 # import class UserInteract
 from ui import UserInteract
+# import class LogicalOperator
+from calculator import LogicalOperator
 
 # Display operation Menu
 print(pyfiglet.figlet_format("Simple Mini Calculator".center(50), font = "digital"))
@@ -12,7 +14,13 @@ print ("=" * 90)
 
 # Assign variable for class
 ui = UserInteract()
+calc = LogicalOperator()
 
 # Get the first and second numbers
 num1 = ui.input_number()
 num2 = ui.input_number()
+
+# Add numbers
+sum = calc.add(num1, num2)
+
+ui.print_sum(sum)

@@ -4,7 +4,7 @@ class LogicalOperator:
     def add(self, num1, num2):
         # add num1, num2
         sum = num1 + num2
-        return
+        return sum
     
     # Method for subtraction
     def minus(self, num1, num2):
