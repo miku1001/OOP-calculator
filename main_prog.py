@@ -1,20 +1,14 @@
-# import pyfiglet
-import pyfiglet
 # import class UserInterface
 from ui import UserInterface
 # import class LogicalOperator
 from calculator import LogicalOperator
 
-# Display operation Menu
-print(pyfiglet.figlet_format("Simple Mini Calculator".center(50), font = "digital"))
-print("To choose your desire operation: ")
-print("\033[31mPress 1 \033[0m: Addition", " " * 35, "\033[32mPress 2 \033[0m: Subtraction \n"
-      "\033[33mPress 3 \033[0m: Multiplication ", " " * 28, "\033[34mPress 4 \033[0m: Division")
-print ("=" * 90)
-
 # Assign variable for class
 ui = UserInterface()
 calc = LogicalOperator()
+
+# Display operation Menu
+ui.operation()
 
 # Start Program
 while True:
@@ -24,20 +18,25 @@ while True:
 
     # Choose Operation
     mode = ui.mode()
-    if mode == 1:
+    if mode == "1":
         sum = calc.add(num1, num2)
+        print()
         ui.print_ans(sum)
-    elif mode == 2:
+    elif mode == "2":
         diff = calc.minus(num1, num2)
+        print()
         ui.print_ans(diff)        
-    elif mode == 3:
+    elif mode == "3":
         product = calc.multiply(num1, num2)
+        print()
         ui.print_ans(product)
-    elif mode == 4:
+    elif mode == "4":
         quotient = calc.divide(num1, num2)
+        print()
         ui.print_ans(quotient)
     else:
-        print("\033[31mInvalid character!\033[0m \n")
+        print()
+        print("\033[31mInvalid choice!\033[0m \n")
         continue
     
     if not ui.again():
