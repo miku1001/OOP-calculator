@@ -37,7 +37,7 @@ while True:
         quotient = calc.divide(num1, num2)
         ui.print_ans(quotient)
     else:
-        print("Invalid choice!")
+        print("\033[31mInvalid character!\033[0m \n")
         continue
     
     if not ui.again():

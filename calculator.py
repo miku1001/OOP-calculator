@@ -1,3 +1,5 @@
+from ui import UserInteract
+ui = UserInteract()
 # Create class
 class LogicalOperator:
     # Method for addition
@@ -20,6 +22,14 @@ class LogicalOperator:
     
     # Method for division
     def divide(self, num1, num2):
-        # divide num1, num2
-        quotient = num1 / num2
-        return quotient
+        while True:
+            try:
+                # divide num1, num2
+                quotient = num1 / num2
+                return quotient
+            except ZeroDivisionError:
+                print()
+                print("\033[31mERROR! Divided by zero\033[0m \n")
+                num1 = ui.input_number()
+                num2 = ui.input_number()
+                
