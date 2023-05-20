@@ -1,11 +1,11 @@
 # import class UserInterface
 from ui import UserInterface
-# import class LogicalOperator
-from calculator import LogicalOperator
+# import class MathematiclOperator
+from calculator import MathematicalOperator
 
 # Assign variable for class
 ui = UserInterface()
-calc = LogicalOperator()
+calc = MathematicalOperator()
 
 # Display operation Menu
 ui.operation()
