@@ -16,11 +16,23 @@ print ("=" * 90)
 ui = UserInteract()
 calc = LogicalOperator()
 
-# Get the first and second numbers
-num1 = ui.input_number()
-num2 = ui.input_number()
+# Start Program
+while True:
+    # Get the first and second numbers
+    num1 = ui.input_number()
+    num2 = ui.input_number()
 
-# Add numbers
-sum = calc.add(num1, num2)
-
-ui.print_sum(sum)
+    # Choose Operation
+    mode = ui.mode()
+    if mode == 1:
+        sum = calc.add(num1, num2)
+        ui.print_ans(sum)
+    if mode == 2:
+        diff = calc.minus(num1, num2)
+        ui.print_ans(diff)        
+    if mode == 3:
+        product = calc.multiply(num1, num2)
+        ui.print_ans(product)
+    if mode == 4:
+        quotient = calc.divide(num1, num2)
+        ui.print_ans(quotient)

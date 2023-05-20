@@ -21,5 +21,5 @@ class LogicalOperator:
     # Method for division
     def divide(self, num1, num2):
         # divide num1, num2
-        quotient = num1 + num2
+        quotient = num1 / num2
         return quotient
