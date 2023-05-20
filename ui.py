@@ -10,6 +10,7 @@ class UserInterface:
         print("\033[31mPress 1 \033[0m: Addition", " " * 35, "\033[32mPress 2 \033[0m: Subtraction \n"
         "\033[33mPress 3 \033[0m: Multiplication ", " " * 28, "\033[34mPress 4 \033[0m: Division")
         print ("=" * 90)
+
     # Create method to input number
     def input_number(self, number_type):
         while True:
@@ -35,12 +36,12 @@ class UserInterface:
     # Create method to ask user to continue or stop the program
     def again(self):
         while True:
-            retry = input("Do you want to continue? \n"
+            retry = input("Do you want to continue? "
                           "Type \033[32mY\033[0m if yes or \033[31mN\033[0m if no: ")
             print()
             if retry.lower() == 'n':
                 # Stop the program
-                print("Closing Program... Thank you! \U0001F64B")
+                print("Closing Program... Thank you for using! \U0001F64B")
                 return False
             # If y
             elif retry.lower() == 'y':
