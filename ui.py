@@ -1,10 +1,10 @@
 # Create class
-class UserInteract:
+class UserInterface:
     # Create method to input number
-    def input_number(self):
+    def input_number(self, number_type):
         while True:
             try:
-                num = float(input("Input a number: "))
+                num = float(input("Input {} number: ".format(number_type)))
                 return num
             except ValueError:
                 print()

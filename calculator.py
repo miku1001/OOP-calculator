@@ -1,5 +1,7 @@
-from ui import UserInteract
-ui = UserInteract()
+# Import UserInteract for ZeroDivision error
+from ui import UserInterface
+ui = UserInterface()
+
 # Create class
 class LogicalOperator:
     # Method for addition
@@ -30,6 +32,5 @@ class LogicalOperator:
             except ZeroDivisionError:
                 print()
                 print("\033[31mERROR! Divided by zero\033[0m \n")
-                num1 = ui.input_number()
-                num2 = ui.input_number()
-                
+                num1 = ui.input_number("first")
+                num2 = ui.input_number("second")

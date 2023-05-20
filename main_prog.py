@@ -1,7 +1,7 @@
 # import pyfiglet
 import pyfiglet
-# import class UserInteract
-from ui import UserInteract
+# import class UserInterface
+from ui import UserInterface
 # import class LogicalOperator
 from calculator import LogicalOperator
 
@@ -13,14 +13,14 @@ print("\033[31mPress 1 \033[0m: Addition", " " * 35, "\033[32mPress 2 \033[0m: S
 print ("=" * 90)
 
 # Assign variable for class
-ui = UserInteract()
+ui = UserInterface()
 calc = LogicalOperator()
 
 # Start Program
 while True:
     # Get the first and second numbers
-    num1 = ui.input_number()
-    num2 = ui.input_number()
+    num1 = ui.input_number("first")
+    num2 = ui.input_number("second")
 
     # Choose Operation
     mode = ui.mode()
