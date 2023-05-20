@@ -1,9 +1,25 @@
 # Create class
-# Method for addition
-    # add num1, num2
-# Method for subtraction
-    # subtract num1, num2
-# Method for multiplication
-    # multiply num1, num2
-# Method for division
-    # divide num1, num2
+class LogicalOperator:
+    # Method for addition
+    def add(self, num1, num2):
+        # add num1, num2
+        sum = num1 + num2
+        return
+    
+    # Method for subtraction
+    def minus(self, num1, num2):
+        # subtract num1, num2
+        diff = num1 - num2
+        return diff
+    
+    # Method for multiplication
+    def multiply(self, num1, num2):
+        # multiply num1, num2
+        product = num1 * num2
+        return product
+    
+    # Method for division
+    def divide(self, num1, num2):
+        # divide num1, num2
+        quotient = num1 + num2
+        return quotient
