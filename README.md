@@ -5,7 +5,7 @@
 ### Table of Contents
 - [Tech](#tech)
 - [Features](#feat)
-- [Project Structure](#PJ)
+- [Project Structure](#proj)
 - [Run](#run)
 - [How to run in IDE](#ide)
 - [Contact](#contact)
@@ -23,7 +23,7 @@ Uses:
 - Error handling: Gracefully handle invalid inputs and prevent program crashes.
 - User-friendly interface: Intuitive command-line interface for ease of use.
 
-### Project Structure <a name="PJ"></a>
+### Project Structure <a name="proj"></a>
 - ui.py: It handles user interaction.(Inputting values, Printing values, etc.)
 - calculator.py: Contains the various mathematical operations supported by calculator.
 - main_prog.py: Contains utility functions used by the calculator.
