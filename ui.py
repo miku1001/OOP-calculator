@@ -9,7 +9,8 @@ class UserInterface:
         print("To choose your desire operation: ")
         print("\033[31mPress 1 \033[0m: Addition", " " * 35, "\033[32mPress 2 \033[0m: Subtraction \n"
         "\033[33mPress 3 \033[0m: Multiplication ", " " * 28, "\033[34mPress 4 \033[0m: Division \n"
-        "\033[35mPress 5 \033[0m: Exponent", " " * 35, "\033[36mPress 6 \033[0m: Roots")
+        "\033[35mPress 5 \033[0m: Exponent", " " * 35, "\033[36mPress 6 \033[0m: Roots \n"
+        "\033[30mPress 7 \033[0m: Remainder")
         print ("=" * 90)
         print("\033[31mNOTE \033[0m: When choosing exponent: First Number = Base, Second Number = Exponent \n"
               "\033[31mNOTE \033[0m: When choosing exponent: First Number = Base, Second Number = Root")

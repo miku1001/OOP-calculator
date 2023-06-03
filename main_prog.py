@@ -35,9 +35,12 @@ while True:
     elif mode == "5":
         exp = cted.exponent(num1, num2)
         ui.print_ans(exp)
-    elif mode =="6":
+    elif mode == "6":
         root = cted.roots(num1, num2)
         ui.print_ans(root)
+    elif mode == "7":
+        rem = cted.remainder(num1, num2)
+        ui.print_ans(rem)
     else:
         print("\033[31mInvalid choice!\033[0m \n")
         continue
