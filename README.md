@@ -52,10 +52,9 @@ To run this program, you need to:
         - 2 - Subtraction
         - 3 - Multiplication
         - 4 - Division
-        Addition
-        - 5 - Exponent
-        - 6 - Roots
-        - 7 - Remainder
+        - 5 - Exponent (NEW)
+        - 6 - Roots (NEW)
+        - 7 - Remainder (NEW)
     2. Enter first number.
     3. Enter second number.
     3. The result will be displayed on the screen.
