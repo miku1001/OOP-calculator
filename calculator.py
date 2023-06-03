@@ -1,6 +1,6 @@
 # Import UserInteract for ZeroDivision error
-from ui import UserInterface
-ui = UserInterface()
+from inherit_ui import InheritUserInt
+ui = InheritUserInt()
 
 # Create class
 class MathematicalOperator:

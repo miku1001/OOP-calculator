@@ -1,11 +1,11 @@
 # import class UserInterface
-from ui import UserInterface
+from inherit_ui import InheritUserInt
 # import class MathematiclOperator
 from calculator import MathematicalOperator
 from calcbyted import CalculatorTed
 
 # Assign variable for class
-ui = UserInterface()
+ui = InheritUserInt()
 calc = MathematicalOperator()
 cted = CalculatorTed()
 
