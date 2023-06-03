@@ -35,6 +35,7 @@ Uses:
      $ python main_prog.py
      $ python calculator.py
      $ python ui.py
+     $ python calcbyted.py
      
 ## How to run in IDE <a name="ide"></a>
 
